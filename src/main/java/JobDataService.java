@@ -9,9 +9,15 @@ public class JobDataService {
       }
       return "";
     }
-//    FilterJobsByCountry(List <JobDetails> jobs, String country){
-//
-//    }
+    public static String FilterJobsByCountry(List <JobDetails> jobs, String country){
+        for(JobDetails j:jobs){
+            if(j.getLocation()==country){
+                return j.toString();
+            }
+        }
+        return "";
+
+   }
 //    FilterJobsByLevel(List <JobDetails> jobs, string level){
 //
 //    }
