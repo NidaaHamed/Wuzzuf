@@ -14,6 +14,10 @@ public class JobDetails {
         this.Level=Level;
         this.YearsExp=YearsExp;
     }
+    @Override
+    public String toString() {
+        return "Job{" + "Title=" + Title + ", Company=" + Company + ", Location=" + Location + ", Type=" + Type + ", Level=" + Level + ", YearsExp=" + YearsExp + '}';
+    }
 
     public String getTitle() {
         return Title;

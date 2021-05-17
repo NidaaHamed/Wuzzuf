@@ -1,12 +1,13 @@
 import java.util.List;
 
 public class JobDataService {
-    public static void FilterJobsByTitle(List<JobDetails> jobs, String Title){
+    public static String FilterJobsByTitle(List<JobDetails> jobs, String Title){
       for(JobDetails j:jobs){
           if(j.getTitle()==Title){
-              System.out.println(j);
+              return j.toString();
           }
       }
+      return "";
     }
 //    FilterJobsByCountry(List <JobDetails> jobs, String country){
 //
